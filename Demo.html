@@ -42,13 +42,26 @@ footer{
 header, footer, article, nav, aside {
   padding: 1em;
 }
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100vh;
+  }
+  .cards img {
+    margin: 10px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    max-width: 23vw;
+  }
 </style>
 <body>
   <header>Welcome to the Music Recommendation Page!</header>
   <div id="main">
     <article>Recommendations
         <h4>Prince : "Thinking out Loud by Ed Sheeran"</h4>
-        <h4>Prince : "Castle on the hill Loud by Ed Sheeran"</h4>
+        <h4>Prince : "Castle on the hill by Ed Sheeran"</h4>
         <h4>Prince : "Numb by Linkin Park"</h4>
     </article>
     <nav>Nav
@@ -57,4 +70,17 @@ header, footer, article, nav, aside {
     <aside>Aside</aside>
   </div>
   <footer>Created by Prince Praveen using FlexBox</footer>
+
+  <main class="cards">
+    <img src="music.jpg" alt="Sample photo">
+    <img src="music.jpg" alt="Sample photo">
+    <img src="music.jpg" alt="Sample photo">
+    <img src="music.jpg" alt="Sample photo">
+    <img src="music.jpg" alt="Sample photo">
+    <img src="music.jpg" alt="Sample photo">
+    <img src="music.jpg" alt="Sample photo">
+    <img src="music.jpg" alt="Sample photo">
+    
+  </main>
 </body>
+
