@@ -45,24 +45,67 @@ header, footer, article, nav, aside {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction: row;
-    max-height: 100vh;
+    align-items: stretch;
   }
-  .cards img {
+  .card {
+    flex: 0 0 200px;
     margin: 10px;
-    border: 3px solid #000;
-    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
-    max-width: 23vw;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  } 
+  .card img {
+    max-width: 100%;
   }
+  .card .text {
+    padding: 0 20px 20px;
+  }
+  .card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    }
+
 </style>
 <body>
   <header>Welcome to the Music Recommendation Page!</header>
   <div id="main">
     <article>Recommendations
-        <h4>Prince : "Thinking out Loud by Ed Sheeran"</h4>
-        <h4>Prince : "Castle on the hill by Ed Sheeran"</h4>
-        <h4>Prince : "Numb by Linkin Park"</h4>
+        <main class="cards">
+            <article class="card">
+              <img src="Thinking_Out_Loud_cover.png" alt="Sample photo">
+              <div class="text">
+                <h3>Thinking Out Loud</h3>
+                <p>Ed Sheeran</p>
+                <button>Listen Now</button>
+              </div>
+            </article>
+            <article class="card">
+              <img src="all of the stars.jpg" alt="Sample photo">
+              <div class="text">
+                <h3>All of the Stars</h3>
+                <p>Ed Sheeran</p>
+                <button>Listen Now</button>
+              </div>
+            </article>
+            <article class="card">
+                <img src="iridescent.jpg" alt="Sample photo">
+                <div class="text">
+                  <h3>Iridescent </h3>
+                  <p>Linkin Park</p>
+                  <button>Listen Now</button>
+                </div>
+              </article>
+              <article class="card">
+                <img src="dil hi toh hai.jpg" alt="Sample photo">
+                <div class="text">
+                  <h3>Dil hi toh hai </h3>
+                  <p>Arijit Singh</p>
+                  <button>Listen Now</button>
+                </div>
+              </article>
+        </main>    
     </article>
     <nav>Nav
         
@@ -71,16 +114,6 @@ header, footer, article, nav, aside {
   </div>
   <footer>Created by Prince Praveen using FlexBox</footer>
 
-  <main class="cards">
-    <img src="music.jpg" alt="Sample photo">
-    <img src="music.jpg" alt="Sample photo">
-    <img src="music.jpg" alt="Sample photo">
-    <img src="music.jpg" alt="Sample photo">
-    <img src="music.jpg" alt="Sample photo">
-    <img src="music.jpg" alt="Sample photo">
-    <img src="music.jpg" alt="Sample photo">
-    <img src="music.jpg" alt="Sample photo">
-    
-  </main>
+  
 </body>
 
