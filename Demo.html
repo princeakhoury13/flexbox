@@ -67,6 +67,24 @@ header, footer, article, nav, aside {
     width: 100%;
     }
 
+    .media {
+    display: flex;
+    align-items: flex-start;
+    background: #F6F3EB;
+    padding: 1em;
+    border-radius: 3px;
+    max-width: 24em;
+  }
+  .media-object {
+    margin-right: 1em;
+  }
+  .media-body {
+    flex: 1;
+  }
+  .media-heading {
+    margin: 0 0 .5em;
+  }  
+
 </style>
 <body>
   <header>Welcome to the Music Recommendation Page!</header>
@@ -110,7 +128,15 @@ header, footer, article, nav, aside {
     <nav>Nav
         
     </nav>
-    <aside>Aside</aside>
+    <aside>Aside
+        <div class="media">
+            <img class="media-object" src="song.png" alt="Sample photo">
+            <div class="media-body">
+              <h3 class="media-heading">Media Object</h3>
+              <p>Sample Media Object</p>
+            </div>
+          </div>
+    </aside>
   </div>
   <footer>Created by Prince Praveen using FlexBox</footer>
 
